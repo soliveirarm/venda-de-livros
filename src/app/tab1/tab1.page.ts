@@ -77,14 +77,14 @@ export class Tab1Page {
       name: 'Harry Potter e a Câmara Secreta: 2',
       author: 'J.K Rowling',
       cover: 'https://m.media-amazon.com/images/I/81jbivNEVML._SL1500_.jpg',
-      price: 50.86,
+      price: 53.04,
       desc: 'Ele não é um garoto qualquer, ele sequer é um feiticeiro qualquer ele é Harry Potter, símbolo de poder, resistência e um líder natural entre os sobrenaturais. A fábula, recheada de fantasmas, paredes que falam, caldeirões, sapos, unicórnios, dragões e gigantes, não é, entretanto, apenas um passatempo.',
     },
     {
       name: 'Harry Potter e o Prisioneiro de Azkaban: 3',
       author: 'J.K Rowling',
       cover: 'https://m.media-amazon.com/images/I/81u+ljPVifL._SL1500_.jpg',
-      price: 50.86,
+      price: 56.18,
       desc: 'Ele não é um garoto qualquer, ele sequer é um feiticeiro qualquer ele é Harry Potter, símbolo de poder, resistência e um líder natural entre os sobrenaturais. A fábula, recheada de fantasmas, paredes que falam, caldeirões, sapos, unicórnios, dragões e gigantes, não é, entretanto, apenas um passatempo.',
     },
   ];
