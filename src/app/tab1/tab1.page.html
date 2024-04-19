@@ -12,14 +12,34 @@
   </ion-header>
 
   <ion-content>
-    <ion-card *ngFor="let availableBook in availableBooks">
-      <!-- <img [src]="availableBook.cover" alt="" /> -->
-      <ion-card-header>
-        <ion-card-title>{{availableBook.name}}</ion-card-title>
-        <ion-card-subtitle>{{availableBook.author}}</ion-card-subtitle>
-      </ion-card-header>
+    <ion-list class="row">
+      <ion-item *ngFor="let availableBook of availableBooks">
+        <ion-card>
+          <ion-img [src]="availableBook.cover"></ion-img>
+          <ion-card-header>
+            <ion-card-title>{{availableBook.name}}</ion-card-title>
+            <ion-card-subtitle>{{availableBook.author}}</ion-card-subtitle>
+          </ion-card-header>
 
-      <ion-card-content> {{availableBook.desc}} </ion-card-content>
-    </ion-card>
+          <ion-card-content> {{availableBook.desc}} </ion-card-content>
+
+          <ion-grid>
+            <ion-row class="ion-align-items-center">
+              <ion-col>
+                <ion-label color="primary"
+                  ><b>R$ {{formatPrice(availableBook.price)}}</b></ion-label
+                >
+              </ion-col>
+              <ion-col>
+                <ion-button fill="clear">
+                  <ion-icon slot="start" name="cart-outline"></ion-icon>
+                  Adicionar ao carrinho</ion-button
+                >
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-content>
