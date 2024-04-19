@@ -17,9 +17,25 @@ export class Tab2Page {
     }
   }
 
+  updateWishlist() {
+    localStorage['books'] = JSON.stringify(this.books);
+  }
+
   addBook() {
     this.books.push({ name: this.newBook, acquired: false });
-    localStorage['books'] = JSON.stringify(this.books);
+    this.updateWishlist();
     this.newBook = '';
+  }
+
+  deleteBook(book: any) {
+    let index = this.books.indexOf(book);
+    this.books.splice(index, 1);
+    this.updateWishlist();
+  }
+
+  toggleAcquired(e: any, book: any) {
+    if (e.target.checked) book.acquired = true;
+    else book.acquired = false;
+    this.updateWishlist();
   }
 }

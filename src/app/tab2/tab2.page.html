@@ -24,11 +24,17 @@
   <ion-list id="wishlist" *ngFor="let book of books" class="ion-padding">
     <ion-item>
       <ion-checkbox
-        [checked]="book.acquired"
         labelPlacement="end"
         justify="start"
+        (ionChange)="toggleAcquired($event, book)"
+        [checked]="book.acquired"
         >{{ book.name }}</ion-checkbox
       >
+
+      <ion-button (click)="deleteBook(book)" color="danger" fill="clear">
+        <ion-icon slot="start" name="trash"></ion-icon>
+        Excluir
+      </ion-button>
     </ion-item>
   </ion-list>
 </ion-content>
