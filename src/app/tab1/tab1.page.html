@@ -10,4 +10,16 @@
       <ion-title size="large">Livros</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-content>
+    <ion-card *ngFor="let availableBook in availableBooks">
+      <!-- <img [src]="availableBook.cover" alt="" /> -->
+      <ion-card-header>
+        <ion-card-title>{{availableBook.name}}</ion-card-title>
+        <ion-card-subtitle>{{availableBook.author}}</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content> {{availableBook.desc}} </ion-card-content>
+    </ion-card>
+  </ion-content>
 </ion-content>

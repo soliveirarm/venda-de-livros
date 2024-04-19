@@ -8,12 +8,18 @@ import { Component } from '@angular/core';
 export class Tab2Page {
   newBook: string = '';
   books: any = [];
-  localSave: any = localStorage.getItem('books');
 
   constructor() {}
 
+  ngOnInit() {
+    if (localStorage['books'] != null) {
+      this.books = JSON.parse(localStorage['books']);
+    }
+  }
+
   addBook() {
-    this.books.push(this.newBook);
+    this.books.push({ name: this.newBook, acquired: false });
+    localStorage['books'] = JSON.stringify(this.books);
     this.newBook = '';
   }
 }

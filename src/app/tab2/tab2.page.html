@@ -16,14 +16,19 @@
       <ion-input
         placeholder="Digite o nome do livro aqui"
         [(ngModel)]="newBook"
+        (keyup.enter)="addBook()"
       ></ion-input>
-      <ion-button (click)="addBook()">
-        <ion-icon name="add"></ion-icon>
-      </ion-button>
     </ion-item>
   </ion-list>
 
-  <ion-list id="wishlist" *ngFor="let book of books">
-    <ion-item>{{book}}</ion-item>
+  <ion-list id="wishlist" *ngFor="let book of books" class="ion-padding">
+    <ion-item>
+      <ion-checkbox
+        [checked]="book.acquired"
+        labelPlacement="end"
+        justify="start"
+        >{{ book.name }}</ion-checkbox
+      >
+    </ion-item>
   </ion-list>
 </ion-content>
