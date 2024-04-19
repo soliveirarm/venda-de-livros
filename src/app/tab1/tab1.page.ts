@@ -65,6 +65,28 @@ export class Tab1Page {
       price: 12.42,
       desc: 'O existencialismo é um humanismo é um texto circunstancial no percurso intelectual de Sartre. Ele antecede um novo ciclo em sua investigação filosófica. As objeções à sua obra, que ele procura inventariar nessa conferência, por mais confusas e hostis que sejam, provocarão novas questões que serão tratadas mais tarde, após um livre amadurecimento, testemunhado, entre outras coisas, por seus escritos póstumos.',
     },
+    {
+      name: 'Harry Potter  e a Pedra Filosofal: 1',
+      author: 'J.K Rowling',
+      cover:
+        'https://m.media-amazon.com/images/I/81ibfYk4qmL._AC_UF1000,1000_QL80_.jpg',
+      price: 50.86,
+      desc: 'Ele não é um garoto qualquer, ele sequer é um feiticeiro qualquer ele é Harry Potter, símbolo de poder, resistência e um líder natural entre os sobrenaturais. A fábula, recheada de fantasmas, paredes que falam, caldeirões, sapos, unicórnios, dragões e gigantes, não é, entretanto, apenas um passatempo.',
+    },
+    {
+      name: 'Harry Potter e a Câmara Secreta: 2',
+      author: 'J.K Rowling',
+      cover: 'https://m.media-amazon.com/images/I/81jbivNEVML._SL1500_.jpg',
+      price: 50.86,
+      desc: 'Ele não é um garoto qualquer, ele sequer é um feiticeiro qualquer ele é Harry Potter, símbolo de poder, resistência e um líder natural entre os sobrenaturais. A fábula, recheada de fantasmas, paredes que falam, caldeirões, sapos, unicórnios, dragões e gigantes, não é, entretanto, apenas um passatempo.',
+    },
+    {
+      name: 'Harry Potter e o Prisioneiro de Azkaban: 3',
+      author: 'J.K Rowling',
+      cover: 'https://m.media-amazon.com/images/I/81u+ljPVifL._SL1500_.jpg',
+      price: 50.86,
+      desc: 'Ele não é um garoto qualquer, ele sequer é um feiticeiro qualquer ele é Harry Potter, símbolo de poder, resistência e um líder natural entre os sobrenaturais. A fábula, recheada de fantasmas, paredes que falam, caldeirões, sapos, unicórnios, dragões e gigantes, não é, entretanto, apenas um passatempo.',
+    },
   ];
 
   formatPrice(val: number) {
