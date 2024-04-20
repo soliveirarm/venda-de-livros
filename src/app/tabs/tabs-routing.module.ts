@@ -23,6 +23,11 @@ const routes: Routes = [
           import('../tab3/tab3.module').then((m) => m.Tab3PageModule),
       },
       {
+        path: 'carrinho',
+        loadChildren: () =>
+          import('../tab4/tab4.module').then((m) => m.Tab4PageModule),
+      },
+      {
         path: '',
         redirectTo: '/tabs/livros',
         pathMatch: 'full',

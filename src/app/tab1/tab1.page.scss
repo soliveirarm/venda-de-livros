@@ -2,6 +2,12 @@ ion-card {
   max-width: 400px;
 }
 
+ion-img {
+  max-width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
